@@ -7,19 +7,21 @@
                 margin: 0;
                 padding: 0;
             }
+
             body {
                 background-color: lightblue;
                 animation: cambio 16s infinite;
             }
+
             @keyframes cambio {
                 0% {
-                    background-color: lightblue; 
+                    background-color: lightblue;
                 }
-                50% { 
-                    background-color: black; 
+                50% {
+                    background-color: black;
                 }
-                100% { 
-                    background-color: lightblue; 
+                100% {
+                    background-color: lightblue;
                 }
             }
 
@@ -35,17 +37,18 @@
                 position: absolute;
                 top: 400px;
                 z-index: 3;
-                animation: pasto-color 16s infinite;
+                animation: pasto 16s infinite;
             }
-            @keyframes pasto-color {
-                0% { 
-                    background-color: green; 
+
+            @keyframes pasto {
+                0% {
+                    background-color: green;
                 }
-                50% { 
+                50% {
                     background-color: #0a1f0a;
                 }
-                100% { 
-                    background-color: green; 
+                100% {
+                    background-color: green;
                 }
             }
 
@@ -56,23 +59,29 @@
                 border-radius: 50%;
                 box-shadow: 0px 0px 20px 20px rgba(255, 255, 0, 0.5);
                 position: absolute;
-                animation: movimiento 16s infinite;
+                animation: sol 16s infinite;
             }
-            @keyframes movimiento {
-                0% { 
-                    top: 50px;  left: 650px; 
+
+            @keyframes sol {
+                0% {
+                    top: 50px;
+                    left: 650px;
                 }
-                25% { 
-                    top: 350px; left: 100px; 
+                25% {
+                    top: 350px;
+                    left: 100px;
                 }
-                50% { 
-                    top: 500px; left: 650px; 
+                50% {
+                    top: 500px;
+                    left: 650px;
                 }
-                75% { 
-                    top: 350px; left: 1200px; 
+                75% {
+                    top: 350px;
+                    left: 1200px;
                 }
-                100% { 
-                    top: 50px;  left: 650px; 
+                100% {
+                    top: 50px;
+                    left: 650px;
                 }
             }
 
@@ -83,67 +92,75 @@
                 border-radius: 50%;
                 box-shadow: 0px 0px 20px 20px rgba(255, 255, 255, 0.5);
                 position: absolute;
-                animation: movimiento2 16s infinite;
+                animation: luna 16s infinite;
             }
-            @keyframes movimiento2 {
-                0%   { 
-                    top: 500px; left: 650px; 
+
+            @keyframes luna {
+                0% {
+                    top: 500px;
+                    left: 650px;
                 }
-                25%  { 
-                    top: 350px; left: 1200px; 
+                25% {
+                    top: 350px;
+                    left: 1200px;
                 }
-                50%  { 
-                    top: 50px;  left: 650px; 
+                50% {
+                    top: 50px;
+                    left: 650px;
                 }
-                75%  { 
-                    top: 350px; left: 100px; 
+                75% {
+                    top: 350px;
+                    left: 100px;
                 }
-                100% { 
-                    top: 500px; left: 650px; 
+                100% {
+                    top: 500px;
+                    left: 650px;
                 }
             }
 
             .estrella {
-                width: 5px; height: 5px;
+                width: 5px;
+                height: 5px;
                 background: white;
                 border-radius: 50%;
                 position: absolute;
-                animation: estrellas 16s infinite;
-            }
-            .estrella:nth-child(1) { 
-                top: 60px;  
-                left: 200px; 
-            }
-            .estrella:nth-child(2) { 
-                top: 30px;  
-                left: 500px; 
-            }
-            .estrella:nth-child(3) { 
-                top: 90px;  
-                left: 800px; 
-            }
-            .estrella:nth-child(4) { 
-                top: 50px;  
-                left: 1050px; 
-            }
-            .estrella:nth-child(5) { 
-                top: 120px; 
-                left: 350px; 
-            }
-            .estrella:nth-child(6) { 
-                top: 80px;  
-                left: 950px; 
+                animation: parpadeo 16s infinite;
             }
 
-            @keyframes estrellas {
-                0% { 
-                    opacity: 0; 
+            .estrella:nth-child(1) {
+                top: 60px;
+                left: 200px;
+            }
+            .estrella:nth-child(2) {
+                top: 30px;
+                left: 500px;
+            }
+            .estrella:nth-child(3) {
+                top: 90px;
+                left: 800px;
+            }
+            .estrella:nth-child(4) {
+                top: 50px;
+                left: 1050px;
+            }
+            .estrella:nth-child(5) {
+                top: 120px;
+                left: 350px;
+            }
+            .estrella:nth-child(6) {
+                top: 80px;
+                left: 950px;
+            }
+
+            @keyframes parpadeo {
+                0% {
+                    opacity: 0;
                 }
-                50% { 
-                    opacity: 1; 
+                50% {
+                    opacity: 1;
                 }
-                100% { 
-                    opacity: 0; 
+                100% {
+                    opacity: 0;
                 }
             }
 
@@ -155,41 +172,42 @@
                 animation: nube 16s infinite;
             }
 
-            .nube-1 { 
-                width: 130px; 
-                height: 40px; 
-                top: 100px; 
-                animation-delay: 0s; 
+            .nube-uno {
+                width: 130px;
+                height: 40px;
+                top: 100px;
+                animation-delay: 0s;
             }
-            .nube-2 { 
-                width: 100px; 
-                height: 32px; 
-                top: 150px; 
-                animation-delay: -6s; 
+
+            .nube-dos {
+                width: 100px;
+                height: 32px;
+                top: 150px;
+                animation-delay: -6s;
             }
 
             @keyframes nube {
-                0% { 
-                    left: -160px; 
-                    opacity: 1; 
+                0% {
+                    left: -160px;
+                    opacity: 1;
                 }
-                38% { 
-                    opacity: 1; 
+                38% {
+                    opacity: 1;
                 }
-                50% { 
-                    left: 1500px; 
-                    opacity: 0; 
+                50% {
+                    left: 1500px;
+                    opacity: 0;
                 }
-                51% { 
-                    left: -160px; 
-                    opacity: 0; 
+                51% {
+                    left: -160px;
+                    opacity: 0;
                 }
-                62% { 
-                    opacity: 0; 
+                62% {
+                    opacity: 0;
                 }
-                100% { 
-                    left: -160px; 
-                    opacity: 1; 
+                100% {
+                    left: -160px;
+                    opacity: 1;
                 }
             }
 
@@ -198,49 +216,60 @@
                 top: 300px;
                 left: 180px;
                 z-index: 4;
+                cursor: pointer;
             }
+
             .techo {
-                width: 0; 
+                width: 0;
                 height: 0;
-                border-left:  65px solid transparent;
+                border-left: 65px solid transparent;
                 border-right: 65px solid transparent;
                 border-bottom: 50px solid #5d3a1a;
+                transition: all 0.3s ease;
             }
+
             .pared {
                 width: 130px;
                 height: 90px;
                 background: #8d6e63;
+                transition: all 0.3s ease;
             }
+
             .ventana {
-                width: 28px; 
+                width: 28px;
                 height: 28px;
                 position: absolute;
-                top: 62px; 
+                top: 62px;
                 left: 20px;
                 animation: luz 16s infinite;
             }
+
             .puerta {
-                width: 30px; 
+                width: 30px;
                 height: 45px;
                 background: #4e342e;
                 position: absolute;
-                top: 107px; 
+                top: 107px;
                 left: 50px;
+                transition: all 0.3s ease;
             }
 
             @keyframes luz {
-                0% { 
-                    background: #5d4037; 
-                    box-shadow: none; 
+                0% {
+                    background: #5d4037;
                 }
-                50% { 
-                    background: #fff176; 
-                    box-shadow: 0 0 10px 4px rgba(255,235,100,0.6); 
+                50% {
+                    background: #fff176;
+                    box-shadow: 0 0 10px 4px rgba(255, 235, 100, 0.6);
                 }
                 100% {
-                    background: #5d4037; 
-                    box-shadow: none; 
+                    background: #5d4037;
                 }
+            }
+
+            .casa:hover .ventana {
+                background: #fff176;
+                box-shadow: 0 0 24px 10px rgba(255, 235, 100, 0.9);
             }
 
         </style>
@@ -253,8 +282,8 @@
             <div class="estrella"></div>
             <div class="estrella"></div>
             <div class="estrella"></div>
-            <div class="nube nube-1"></div>
-            <div class="nube nube-2"></div>
+            <div class="nube nube-uno"></div>
+            <div class="nube nube-dos"></div>
             <div class="sol"></div>
             <div class="luna"></div>
             <div class="casa">
@@ -268,3 +297,4 @@
         </div>
     </body>
 </html>
+
